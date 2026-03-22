@@ -3,7 +3,8 @@ const express = require("express");
 const mongoose = require("mongoose");
 const session = require("express-session");
 const passport = require("passport");
-const authRoute = require("./config/passport");
+const authRoute = require("./routes/auth");
+require("./config/passport");
 
 const app = express();
 
